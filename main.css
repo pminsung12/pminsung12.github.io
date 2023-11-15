@@ -2,7 +2,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  min-height: 30vh;
   background: #1E1F21; /* 초록색 배경 */
   justify-content: center;
   align-items: center;
