@@ -1,6 +1,5 @@
 @import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css";
 
-/* Custom styles for specific elements if needed */
 body {
 	background-image: url("../images/train.png");
 	background-size: cover;
