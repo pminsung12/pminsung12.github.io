@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minseong's Climbing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="./stylesheets/activities.css">
+</head>
+
+<body class="bg-fixed bg-cover bg-center text-gray-800 min-h-screen flex flex-col">
+  <header class="bg-opacity-70 backdrop-blur-lg shadow-md sticky top-0 z-50 bg-white text-white">
+    <nav class="container mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-900">Minseong's Fitness Routine</h1>
+      <ul class="flex space-x-4">
+        <li><a href="/" class="text-gray-900 hover:text-gray-700"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+        <li><a href="./quiz.html" class="text-gray-900 hover:text-gray-700"><i class="fas fa-book"></i> Quiz</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto p-6 flex-1 bg-white bg-opacity-80 backdrop-blur-lg rounded-lg mt-6">
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold mb-4 text-gray-900">제 취미는 클라이밍입니다</h2>
+      <p class="text-gray-700">아래의 표는 좋았던 클라이밍 장에 대한 간략한 설명입니다.</p>
+    </section>
+
+    <section class="climbing-list mb-6">
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white bg-opacity-90 backdrop-blur-lg shadow-lg rounded-lg overflow-hidden">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="px-6 py-3 text-left text-sm font-medium text-gray-900">클라이밍 장</th>
+              <th class="px-6 py-3 text-left text-sm font-medium text-gray-900">설명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white border-b border-gray-200">
+              <td class="px-6 py-4 text-gray-900">피커스 클라이밍</td>
+              <td class="px-6 py-4 text-gray-700">종로에 있으며 cgv와 함께 자리하고 있습니다. 지하철역에서 나가지 않고 바로 클라이밍 장으로 들어갈 수 있어 편리합니다.
+              </td>
+            </tr>
+            <tr class="bg-white border-b border-gray-200">
+              <td class="px-6 py-4 text-gray-900">더클라임 양재점</td>
+              <td class="px-6 py-4 text-gray-700">서울 클라이밍 장 중 규모가 큰 편에 속하는 곳입니다. 다양한 컨셉의 벽을 모두 갖추고 있어 취향에 맞게 즐길 수 있습니다.
+              </td>
+            </tr>
+            <tr class="bg-white border-b border-gray-200">
+              <td class="px-6 py-4 text-gray-900">서울숲 클라이밍 영등포점</td>
+              <td class="px-6 py-4 text-gray-700">타임스퀘어가 있는 영등포역에서 10분도 걸리지 않는 위치에 있습니다. 1층에 있어 접근성이 좋으며, 서울숲 정기권을 결제하면
+                모든 지점을 이용할 수 있습니다.</td>
+            </tr>
+            <tr class="bg-white border-b border-gray-200">
+              <td class="px-6 py-4 text-gray-900">더플라스틱 클라이밍짐 염창</td>
+              <td class="px-6 py-4 text-gray-700">강서 클라이밍장으로 유명한 곳입니다. 저녁이나 주말에 보면 사람들도 많이 오고 왁자지껄함과 힙함이 느껴지는 장소입니다.
+              </td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-6 py-4 text-gray-900">락트리 클라이밍 분당</td>
+              <td class="px-6 py-4 text-gray-700">수내역 바로 앞에 위치해 있으며, 건물 내에 지하주차장이 있습니다. 공휴일 기준으로 지하 2층은 거의 만석이며, 외부에
+                주차해도 되는 점 참고 바랍니다.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

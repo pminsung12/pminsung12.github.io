@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minseong's Algorithm Study</title>
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="./stylesheets/activities.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-fixed bg-cover bg-center text-gray-800 min-h-screen flex flex-col">
+  <header class="bg-opacity-70 backdrop-blur-lg shadow-md sticky top-0 z-50 bg-white text-white">
+    <nav class="container mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-900">Minseong's Fitness Routine</h1>
+      <ul class="flex space-x-4">
+        <li><a href="/" class="text-gray-900 hover:text-gray-700"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+        <li><a href="./quiz.html" class="text-gray-900 hover:text-gray-700"><i class="fas fa-book"></i> Quiz</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto p-6 flex-1 bg-white bg-opacity-80 backdrop-blur-lg rounded-lg mt-6">
+    <section class="intro mb-6">
+      <h2 class="text-2xl font-bold text-gray-900">My Algorithm Study Plan</h2>
+      <p class="text-gray-700">여기에서 제가 집중적으로 학습하고 있는 알고리즘 분야를 소개합니다.</p>
+    </section>
+
+    <section class="algorithm-study grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="topic bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Data Structures</h3>
+        <p class="text-gray-700">배열, 연결 리스트, 스택, 큐, 트리, 그래프 등 기본적인 자료구조를 학습합니다. 각 자료구조의 특징과 연산, 구현 방법을 공부하고, 실제 문제 해결에
+          어떻게 활용되는지 알아볼 계획입니다.</p>
+      </div>
+      <div class="topic bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Sorting Algorithms</h3>
+        <p class="text-gray-700">버블 정렬, 선택 정렬, 삽입 정렬, 합병 정렬, 퀵 정렬 등 다양한 정렬 알고리즘을 학습합니다. 각 알고리즘의 동작 원리와 시간 복잡도, 장단점을
+          비교하고, 실제 구현과 최적화 방법도 공부할 예정입니다.</p>
+      </div>
+      <div class="topic bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Search Algorithms</h3>
+        <p class="text-gray-700">선형 탐색, 이진 탐색, 깊이 우선 탐색(DFS), 너비 우선 탐색(BFS) 등 탐색 알고리즘을 학습합니다. 각 알고리즘의 동작 원리와 활용 방법을
+          공부하고, 그래프와 트리 탐색에 대해서도 알아볼 계획입니다.</p>
+      </div>
+      <div class="topic bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Dynamic Programming</h3>
+        <p class="text-gray-700">동적 계획법의 개념과 원리를 학습합니다. 중복 부분 문제와 최적 부분 구조 성질을 이해하고, 메모이제이션과 타뷸레이션 기법을 활용하여 효율적인 알고리즘을
+          설계하는 방법을 공부할 예정입니다.</p>
+      </div>
+      <div class="topic bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Graph Algorithms</h3>
+        <p class="text-gray-700">그래프 이론과 그래프 알고리즘을 학습합니다. 최단 경로 알고리즘(다익스트라, 벨만-포드), 최소 신장 트리 알고리즘(크루스칼, 프림), 위상 정렬, 네트워크
+          플로우 등 다양한 그래프 알고리즘을 공부할 계획입니다.</p>
+      </div>
+      <div class="topic bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">String Algorithms</h3>
+        <p class="text-gray-700">문자열 처리와 관련된 알고리즘을 학습합니다. KMP 알고리즘, 라빈-카프 알고리즘, 트라이(Trie) 등 문자열 검색 알고리즘과 문자열 압축, 편집 거리 등
+          문자열 처리 알고리즘을 공부할 예정입니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/activities.js"></script>
+</body>
+
+</html>

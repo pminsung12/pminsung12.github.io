@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minseong App v.0.3.0</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="bg-fixed bg-cover bg-center text-gray-800 min-h-screen flex flex-col">
+
+  <header class="bg-opacity-70 backdrop-blur-lg shadow-md sticky top-0 z-50 bg-white text-white">
+    <nav class="container mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-900">Waana know me? Welcome😎</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+        <li><a href="./quiz.html" class="text-gray-900 hover:text-gray-700"><i class="fas fa-book"></i> Quiz</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto p-6 flex-1 bg-white bg-opacity-80 backdrop-blur-lg rounded-lg mt-6">
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h2 class="text-xl font-bold mb-4 text-gray-900">Favorite Activities</h2>
+        <p class="text-gray-700">제가 가장 좋아하는 활동, 취미에 대해 알려드리겠습니다. 아래 키워드를 클릭하시면 자세한 내용을 확인하실 수 있습니다.</p>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          <a href="./reading.html" class="block text-center">
+            <img class="w-full h-24 object-cover rounded-lg shadow-md" src="./images/books.jpg" alt="books">
+            <h3 class="mt-2 text-gray-700">Reading</h3>
+          </a>
+          <a href="./climbing.html" class="block text-center">
+            <img class="w-full h-24 object-cover rounded-lg shadow-md" src="./images/climbing.jpg" alt="climbing">
+            <h3 class="mt-2 text-gray-700">Climbing</h3>
+          </a>
+          <a href="./keyboard.html" class="block text-center">
+            <img class="w-full h-24 object-cover rounded-lg shadow-md" src="./images/keyboard.jpg" alt="keyboard">
+            <h3 class="mt-2 text-gray-700">Keyboard</h3>
+          </a>
+          <a href="./music.html" class="block text-center">
+            <img class="w-full h-24 object-cover rounded-lg shadow-md" src="./images/music.jpg" alt="music">
+            <h3 class="mt-2 text-gray-700">Music</h3>
+          </a>
+          <a href="./movie.html" class="block text-center">
+            <img class="w-full h-24 object-cover rounded-lg shadow-md" src="./images/movie.jpg" alt="movie">
+            <h3 class="mt-2 text-gray-700">Movie</h3>
+          </a>
+          <a href="./games.html" class="block text-center">
+            <img class="w-full h-24 object-cover rounded-lg shadow-md" src="./images/games.jpg" alt="games">
+            <h3 class="mt-2 text-gray-700">Games</h3>
+          </a>
+          <a href="./fitness.html" class="block text-center">
+            <img class="w-full h-24 object-cover rounded-lg shadow-md" src="./images/fitness.jpg" alt="fitness">
+            <h3 class="mt-2 text-gray-700">Fitness</h3>
+          </a>
+          <a href="./cs_study.html" class="block text-center">
+            <img class="w-full h-24 object-cover rounded-lg shadow-md" src="./images/cs_study.jpg" alt="cs_study">
+            <h3 class="mt-2 text-gray-700">CS Study</h3>
+          </a>
+          <a href="./algorithm_study.html" class="block text-center">
+            <img class="w-full h-24 object-cover rounded-lg shadow-md" src="./images/algorithm_study.jpg"
+              alt="algorithm_study">
+            <h3 class="mt-2 text-gray-700">Algorithm Study</h3>
+          </a>
+          <a href="./data_structures_study.html" class="block text-center">
+            <img class="w-full h-24 object-cover rounded-lg shadow-md" src="./images/data_structures_study.jpg"
+              alt="data_structures_study">
+            <h3 class="mt-2 text-gray-700">Data Structures Study</h3>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg md:col-span-2">
+        <h2 class="text-xl font-bold mb-4 text-gray-900">Personal Info</h2>
+        <p class="text-gray-700"><strong>📢 이름을 입력해주세요!</strong></p>
+        <p class="text-gray-700">안녕하세요,</p>
+        <p class="text-gray-700">00년생 용띠 <strong>박민성</strong>입니다~!</p>
+        <p class="text-gray-700">앞으로 잘부탁드려요!!</p>
+
+        <p class="text-gray-700"><strong>🎤 나는 어떤 사람인지, 간단한 소개 부탁드려요!</strong></p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>현재 졸업까지 1년정도 남은 상태고 취준과 학업을 병행 중입니다.</li>
+          <li>저는 효율적으로 일하는 것을 좋아하고 문제에 대해 다양한 관점으로 토론하는 것을 즐깁니다.</li>
+          <li>또한, 기록하는 것을 즐기려고(?)하고 있습니다. 학습을 할 때에는 처음부터 깔끔하게는 못하지만 제가 알아먹을 수 있게끔, 정리하는 습관이 있습니다.</li>
+          <li>여러 사람들과 네트워킹 하는 것도 무척 좋아합니다. 여러분과 친해져서 취미생활도 같이 할 수 있으면 좋을 것 같아요.</li>
+          <li>현재는 spring 프레임워크를 학습하고 있습니다.</li>
+          <li>저의 기술 스택과 프로젝트 경험은 깃헙을 참고해주세요.</li>
+        </ul>
+
+        <p class="text-gray-700"><strong>💗 취미나 좋아하는 것에 대해 자유롭게 소개해주세요!</strong></p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>OTT 보는 것 좋아합니다.</li>
+          <li>운동하는 것도 좋아합니다.
+            <ul class="list-disc list-inside ml-5 text-gray-700">
+              <li>현재 꾸준히 하고 있는건 헬스고, 스포츠는 클라이밍 4번 정도 해봤습니다. 너무 어렵지만 재밌었어요.</li>
+            </ul>
+          </li>
+          <li>TMI지만 지난주에 일본여행을 갔다왔는데 너무 좋았어요(오사카 교토)</li>
+        </ul>
+
+        <div class="swiper-container mt-4 rounded-lg shadow-md">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/kyoto.png" alt="교토" class="w-full h-full object-cover">
+              <div class="slide-caption">교토</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/kiiyomizudera.png" alt="교토 청각사" class="w-full h-full object-cover">
+              <div class="slide-caption">교토 청각사</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/dotonbori.png" alt="오사카 도톤보리 인산인해🥵" class="w-full h-full object-cover">
+              <div class="slide-caption">오사카 도톤보리 인산인해🥵</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/pinetree.png" alt="클라이밍 왕초보" class="w-full h-full object-cover">
+              <div class="slide-caption">클라이밍 왕초보</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/stranger_things.png" alt="기묘한 이야기" class="w-full h-full object-cover">
+              <div class="slide-caption">기묘한 이야기</div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <p class="text-gray-700 mt-4"><strong>🤟🏻 내가 생각하는 나만의 장점은 무엇인가요?</strong></p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>성격이 밝아요.</li>
+          <li>고집이 세지 않아요. 항상 다른 의견을 존중합니다. 그래서 그런지 결정장애가 있습니다(메뉴 고르는데 오래걸려요)</li>
+          <li>정리를 잘합니다! 개발과정, 의사결정 과정, 회의록을 다 기록해놓습니다. 나중에 보면 상당히 뿌듯합니다 ㅎㅎ</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30, // 슬라이드 간의 간격을 추가
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+
+</body>
+
+</html>

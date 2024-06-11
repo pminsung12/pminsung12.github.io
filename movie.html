@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minseong's Favorite Movie Genres</title>
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="./stylesheets/activities.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="bg-fixed bg-cover bg-center text-gray-800 min-h-screen flex flex-col">
+
+  <header class="bg-opacity-70 backdrop-blur-lg shadow-md sticky top-0 z-50 bg-white text-white">
+    <nav class="container mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-900">Minseong's Fitness Routine</h1>
+      <ul class="flex space-x-4">
+        <li><a href="/" class="text-gray-900 hover:text-gray-700"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+        <li><a href="./quiz.html" class="text-gray-900 hover:text-gray-700"><i class="fas fa-book"></i> Quiz</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto p-6 flex-1 bg-white bg-opacity-80 backdrop-blur-lg rounded-lg mt-6">
+    <section class="intro mb-6">
+      <h2 class="text-2xl font-bold text-gray-900">My Favorite Movie Genres</h2>
+      <p class="text-gray-700">영화는 저의 상상력을 자극하고 감정을 울리는 중요한 매체입니다. 제가 가장 좋아하는 영화 장르를 소개합니다.</p>
+    </section>
+
+    <section class="movie-genres grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="genre bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Thriller</h3>
+        <p class="text-gray-700">스릴러 장르는 긴장감과 서스펜스로 가득 차 있으며, 관객들을 끝까지 예측할 수 없는 이야기로 이끌어갑니다. 미스터리, 범죄, 공포 등 다양한 하위 장르를
+          포함하고 있습니다.</p>
+      </div>
+      <div class="genre bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Science Fiction</h3>
+        <p class="text-gray-700">과학 기술의 발전이나 미래 사회를 배경으로 하는 SF 장르는 상상력을 자극하는 이야기를 선보입니다. 우주 여행, 시간 여행, 인공지능, 디스토피아 등 다양한
+          주제를 다룹니다.</p>
+      </div>
+      <div class="genre bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Comedy</h3>
+        <p class="text-gray-700">코미디 장르는 유머와 웃음을 선사하는 영화로, 일상의 스트레스를 해소하고 즐거운 시간을 보내게 해줍니다. 로맨틱 코미디, 블랙 코미디, 패러디 등 다양한
+          형식이 있습니다.</p>
+      </div>
+      <div class="genre bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Action</h3>
+        <p class="text-gray-700">액션 장르는 빠른 템포와 역동적인 장면들로 가득한 영화입니다. 격투, 추격, 폭파 등 스펙터클한 장면들이 특징이며, 주로 영웅적인 캐릭터가 등장합니다.
+        </p>
+      </div>
+      <div class="genre bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Drama</h3>
+        <p class="text-gray-700">드라마 장르는 인간의 감정과 관계에 초점을 맞춘 영화로, 현실적인 문제나 사회적 이슈를 다룹니다. 가족, 사랑, 우정, 성장 등 다양한 주제를 섬세하게
+          그려냅니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>

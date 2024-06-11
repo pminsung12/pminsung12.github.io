@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minseong's Data Structures Study</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="./stylesheets/activities2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-fixed bg-cover bg-center text-gray-800 min-h-screen flex flex-col">
+  <header class="bg-opacity-70 backdrop-blur-lg shadow-md sticky top-0 z-50 bg-white text-white">
+    <nav class="container mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-900">Minseong's Data Structures Study</h1>
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="text-gray-900 hover:text-gray-700"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-calendar-alt"></i> Schedule</a>
+        </li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-book"></i> Activities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto p-6 flex-1 bg-white bg-opacity-80 backdrop-blur-lg rounded-lg mt-6">
+    <section class="intro mb-6">
+      <h2 class="text-2xl font-bold text-gray-900">My Data Structures Study Plan</h2>
+    </section>
+
+    <section class="data-structures-study grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="structure bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Array</h3>
+        <p class="text-gray-700">배열은 같은 타입의 데이터를 연속적인 메모리 공간에 저장하는 자료구조입니다. 인덱스를 사용하여 빠른 접근이 가능하지만, 크기가 고정되어 있어 삽입과 삭제가
+          비효율적입니다.</p>
+      </div>
+      <div class="structure bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Linked List</h3>
+        <p class="text-gray-700">연결 리스트는 데이터를 포함하는 노드들이 포인터로 연결되어 있는 자료구조입니다. 동적 메모리 할당을 사용하며, 삽입과 삭제가 효율적이지만 랜덤 접근은
+          느립니다.</p>
+      </div>
+      <div class="structure bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Stack</h3>
+        <p class="text-gray-700">스택은 후입선출(LIFO) 구조의 자료구조로, 가장 최근에 삽입된 데이터가 가장 먼저 삭제됩니다. 함수 호출, 괄호 검사, 역순 문자열 만들기 등에
+          활용됩니다.</p>
+      </div>
+      <div class="structure bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Queue</h3>
+        <p class="text-gray-700">큐는 선입선출(FIFO) 구조의 자료구조로, 가장 먼저 삽입된 데이터가 가장 먼저 삭제됩니다. 버퍼, 캐시, 너비 우선 탐색 등에 활용됩니다.</p>
+      </div>
+      <div class="structure bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Tree</h3>
+        <p class="text-gray-700">트리는 계층적 관계를 표현하는 비선형 자료구조로, 노드들이 부모-자식 관계로 연결되어 있습니다. 이진 트리, 이진 탐색 트리, 힙, 트라이 등 다양한 종류가
+          있습니다.</p>
+      </div>
+      <div class="structure bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Graph</h3>
+        <p class="text-gray-700">그래프는 객체 사이의 관계를 표현하는 자료구조로, 정점들과 정점들을 연결하는 간선으로 구성됩니다. 인접 리스트, 인접 행렬 등으로 구현하며, 다양한 그래프
+          알고리즘에 활용됩니다.</p>
+      </div>
+      <div class="structure bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Hash Table</h3>
+        <p class="text-gray-700">해시 테이블은 키를 값에 매핑할 수 있는 자료구조로, 평균 시간 복잡도 O(1)로 빠른 검색, 삽입, 삭제가 가능합니다. 해시 함수를 사용하여 키를 해시
+          값으로 변환하고, 해시 값에 따라 데이터를
+          저장합니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/activities.js"></script>
+</body>
+
+</html>

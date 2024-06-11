@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minseong's CS Study</title>
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="./stylesheets/activities.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-fixed bg-cover bg-center text-gray-800 min-h-screen flex flex-col">
+
+  <header class="bg-opacity-70 backdrop-blur-lg shadow-md sticky top-0 z-50 bg-white text-white">
+    <nav class="container mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-900">Minseong's Fitness Routine</h1>
+      <ul class="flex space-x-4">
+        <li><a href="/" class="text-gray-900 hover:text-gray-700"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+        <li><a href="./quiz.html" class="text-gray-900 hover:text-gray-700"><i class="fas fa-book"></i> Quiz</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto p-6 flex-1 bg-white bg-opacity-80 backdrop-blur-lg rounded-lg mt-6">
+    <section class="intro mb-6">
+      <h2 class="text-2xl font-bold text-gray-900">My CS Study Plan</h2>
+      <p class="text-gray-700">여기에서 제가 집중적으로 학습하고 있는 컴퓨터 과학 분야를 소개합니다.</p>
+    </section>
+
+    <section class="cs-study grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="subject bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Network</h3>
+        <p class="text-gray-700">OSI 7계층, TCP/IP 프로토콜, 라우팅, 서브넷팅 등 네트워크의 기본 개념과 원리를 학습합니다. 소켓 프로그래밍과 네트워크 보안에 대해서도 공부할
+          계획입니다.</p>
+      </div>
+      <div class="subject bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Database</h3>
+        <p class="text-gray-700">관계형 데이터베이스와 SQL에 대해 학습합니다. 정규화, 인덱싱, 트랜잭션, 동시성 제어 등 데이터베이스 설계와 최적화에 필요한 개념을 공부하고, ORM과
+          NoSQL에 대해서도 알아볼 계획입니다.</p>
+      </div>
+      <div class="subject bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Computer Architecture</h3>
+        <p class="text-gray-700">컴퓨터 시스템의 구조와 동작 원리를 학습합니다. 프로세서 아키텍처, 메모리 계층 구조, 캐시, 입출력 시스템 등에 대해 공부하고, 병렬 처리와 파이프라이닝
+          기술도 다룰 예정입니다.</p>
+      </div>
+      <div class="subject bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Operating System</h3>
+        <p class="text-gray-700">운영체제의 기본 개념과 원리를 학습합니다. 프로세스 관리, 메모리 관리, 파일 시스템, 입출력 관리 등 운영체제의 핵심 기능과 알고리즘을 공부하고, 리눅스
+          커널과 셸 스크립팅에 대해서도 알아볼 계획입니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>

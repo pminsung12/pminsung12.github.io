@@ -1,0 +1,106 @@
+@import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css";
+
+/* Custom styles for quiz page */
+body {
+	background-image: url("../images/train.png");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+header {
+	background-color: rgba(255, 255, 255, 0.7); /* 헤더를 반투명하게 설정 */
+	color: #1f2937;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+}
+
+nav a {
+	color: #1f2937;
+	transition: color 0.2s ease;
+}
+
+nav a:hover {
+	color: #4b5563;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#quiz-box,
+#result-box,
+#start-box {
+	animation: fadeIn 1s ease-in-out;
+}
+
+.choice {
+	background-color: #f3f4f6;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.choice:hover {
+	background-color: #e5e7eb;
+}
+
+.choice.correct {
+	background-color: #34d399;
+}
+
+.choice.incorrect {
+	background-color: #f87171;
+	animation: shake 0.5s;
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	20%,
+	60% {
+		transform: translateX(-10px);
+	}
+	40%,
+	80% {
+		transform: translateX(10px);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes popOut {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+#result-box {
+	animation: fadeIn 1s ease-in-out;
+}
+
+#score {
+	color: red;
+	animation: popOut 1s ease;
+}
+
+#emoji {
+	font-size: 3rem;
+	animation: popOut 0.5s ease-in-out;
+}

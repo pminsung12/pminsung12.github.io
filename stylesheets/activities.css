@@ -1,0 +1,30 @@
+.intro {
+	margin-bottom: 2rem;
+}
+
+.intro h2 {
+	color: #111827;
+}
+
+.intro p {
+	color: #4b5563;
+}
+
+.book-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+}
+
+.book-list article {
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0.9
+	); /* 책 목록 항목을 반투명하게 설정 */
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+}

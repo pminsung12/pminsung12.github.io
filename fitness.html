@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minseong's Fitness Routine</title>
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="./stylesheets/activities.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="bg-fixed bg-cover bg-center text-gray-800 min-h-screen flex flex-col">
+
+  <header class="bg-opacity-70 backdrop-blur-lg shadow-md sticky top-0 z-50 bg-white text-white">
+    <nav class="container mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-900">Minseong's Fitness Routine</h1>
+      <ul class="flex space-x-4">
+        <li><a href="/" class="text-gray-900 hover:text-gray-700"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+        <li><a href="./quiz.html" class="text-gray-900 hover:text-gray-700"><i class="fas fa-book"></i> Quiz</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto p-6 flex-1 bg-white bg-opacity-80 backdrop-blur-lg rounded-lg mt-6">
+    <section class="intro mb-6">
+      <h2 class="text-2xl font-bold text-gray-900">My Fitness Routine</h2>
+      <p class="text-gray-700">운동은 저의 삶의 중요한 부분입니다. 제가 따르는 피트니스 루틴을 소개합니다.</p>
+    </section>
+
+    <section class="fitness grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="workout bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Chest Workout</h3>
+        <p class="text-gray-700">벤치프레스, 인클라인 벤치프레스, 딥스, 케이블 플라이 등의 운동을 통해 가슴 근육을 발달시킵니다. 주로 고중량, 저횟수로 훈련하며, 점진적 과부하 원칙을
+          적용합니다.</p>
+      </div>
+      <div class="workout bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Back Workout</h3>
+        <p class="text-gray-700">데드리프트, 풀업, 바벨 로우, 랫풀다운 등의 운동으로 등 근육을 강화합니다. 광배근과 척추기립근을 중점적으로 훈련하며, 다양한 그립과 각도를 활용하여 등
+          전체를 고루 발달시킵니다.</p>
+      </div>
+      <div class="workout bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Shoulder Workout</h3>
+        <p class="text-gray-700">밀리터리 프레스, 사이드 레터럴 레이즈, 벤트오버 레터럴 레이즈 등의 운동으로 어깨 근육을 발달시킵니다. 전면, 측면, 후면 삼각근을 균형있게 훈련하여 어깨
+          라인을 만듭니다.</p>
+      </div>
+      <div class="workout bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Core Workout</h3>
+        <p class="text-gray-700">플랭크, 크런치, 행잉 레그 레이즈, 러시안 트위스트 등의 운동으로 코어 근육을 강화합니다. 복근과 허리 근육을 중점적으로 훈련하여 안정성과 자세를
+          개선합니다.</p>
+      </div>
+      <div class="workout bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Leg Workout</h3>
+        <p class="text-gray-700">스쿼트, 런지, 레그 프레스, 레그 컬, 레그 익스텐션 등의 운동으로 하체 근육을 발달시킵니다. 대퇴사두근, 햄스트링, 엉덩이 근육을 균형있게 훈련하여 하체
+          근력과 근육량을 늘립니다.</p>
+      </div>
+      <div class="workout bg-white bg-opacity-90 backdrop-blur-lg shadow-lg p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-900">Cardio</h3>
+        <p class="text-gray-700">러닝, 사이클링, 로잉머신 등의 유산소 운동을 통해 심폐 지구력을 기릅니다. HIIT(고강도 인터벌 트레이닝)을 활용하여 효율적으로 칼로리를 소모하고, 지방
+          연소를 촉진합니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>

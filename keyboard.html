@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minseong's Keyboard Switches</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="./stylesheets/activities.css">
+</head>
+
+<body class="bg-fixed bg-cover bg-center text-gray-800 min-h-screen flex flex-col">
+  <header class="bg-opacity-70 backdrop-blur-lg shadow-md sticky top-0 z-50 bg-white text-white">
+    <nav class="container mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-900">Minseong's Fitness Routine</h1>
+      <ul class="flex space-x-4">
+        <li><a href="/" class="text-gray-900 hover:text-gray-700"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+        <li><a href="./quiz.html" class="text-gray-900 hover:text-gray-700"><i class="fas fa-book"></i> Quiz</a></li>
+        <li><a href="#" class="text-gray-900 hover:text-gray-700"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto p-6 flex-1 bg-white bg-opacity-80 backdrop-blur-lg rounded-lg mt-6">
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold mb-4 text-gray-900">키보드 축의 종류</h2>
+      <p class="text-gray-700">키보드에는 다양한 종류의 축이 사용됩니다.</p>
+      <p class="text-gray-700">저는 코딩할 때 손이 편해서 무접점을 좋아하는데요, 아래는 대표적인 키보드 축의 종류와 그에 대한 설명입니다.</p>
+    </section>
+
+    <section class="keyboard-switches mb-6">
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white bg-opacity-90 backdrop-blur-lg shadow-lg rounded-lg overflow-hidden">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="px-6 py-3 text-left text-sm font-medium text-gray-900">축 종류</th>
+              <th class="px-6 py-3 text-left text-sm font-medium text-gray-900">설명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white border-b border-gray-200">
+              <td class="px-6 py-4 text-gray-900">청축</td>
+              <td class="px-6 py-4 text-gray-700">클릭감이 뛰어나고 타건 시 커다란 소리가 나는 것이 특징입니다. 타이핑 시 피드백이 좋아 오타가 적은 편이지만, 소리가 크기
+                때문에 주변 사람들에게 방해가 될 수 있습니다.</td>
+            </tr>
+            <tr class="bg-white border-b border-gray-200">
+              <td class="px-6 py-4 text-gray-900">갈축</td>
+              <td class="px-6 py-4 text-gray-700">청축보다는 소리가 작고 적당한 클릭감을 가지고 있습니다. 타건감이 좋아 장시간 타이핑에도 피로감이 적은 편입니다. 가장
+                대중적으로 사용되는 축입니다.</td>
+            </tr>
+            <tr class="bg-white border-b border-gray-200">
+              <td class="px-6 py-4 text-gray-900">적축</td>
+              <td class="px-6 py-4 text-gray-700">리니어 타입의 축으로, 클릭감이 없고 부드러운 타이핑이 가능합니다. 빠른 타이핑이 가능하지만, 오타가 나기 쉽고 피드백이 약한
+                편입니다. 게이밍용으로 많이 사용됩니다.</td>
+            </tr>
+            <tr class="bg-white border-b border-gray-200">
+              <td class="px-6 py-4 text-gray-900">흑축</td>
+              <td class="px-6 py-4 text-gray-700">리니어 타입의 축 중 가장 무거운 축입니다. 깊고 안정적인 타건감을 가지고 있으며, 장시간 사용에도 손가락의 피로도가
+                적습니다. 하지만 무거운 타건감 때문에 타이핑 속도가 느려질 수 있습니다.</td>
+            </tr>
+            <tr class="bg-white border-b border-gray-200">
+              <td class="px-6 py-4 text-gray-900">저소음 적축</td>
+              <td class="px-6 py-4 text-gray-700">적축의 장점을 유지하면서 소음을 줄인 축입니다. 일반 적축보다 소리가 작아 사무실이나 도서관 등 조용한 환경에서 사용하기
+                좋습니다.</td>
+            </tr>
+            <tr class="bg-white border-b border-gray-200">
+              <td class="px-6 py-4 text-gray-900">무접점(멤브레인)</td>
+              <td class="px-6 py-4 text-gray-700">기계식 키보드와 달리 키 스위치 대신 고무판을 사용하는 방식입니다. 가격이 저렴하고 누르는 느낌이 부드러우며 조용합니다.
+                하지만 키 입력에 대한 피드백이 약하고 내구성이 상대적으로 떨어집니다.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
